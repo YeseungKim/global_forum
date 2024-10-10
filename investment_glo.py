@@ -92,7 +92,6 @@ for idx, (company, coins) in enumerate(sorted_data):
         st.write(f"Coins: {coins}")
         st.write("---")
         
-
-    
+        
    
     
