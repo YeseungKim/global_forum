@@ -4,17 +4,9 @@ import matplotlib.pyplot as plt
 from matplotlib import font_manager, rc
 import os
 
-# 한글 폰트 설정
-font_path = 'C:/Users/cherr/OneDrive/nanum-gothic/NanumGothic.ttf'
-if os.path.exists(font_path):
-    font_name = font_manager.FontProperties(fname=font_path).get_name()
-    rc('font', family=font_name)
-    plt.rcParams['axes.unicode_minus'] = False  # 마이너스 폰트 설정
-else:
-    st.warning(f"폰트 경로가 올바르지 않습니다. 폰트가 설치되어 있는지 확인하세요: {font_path}")
 
 # 초기 데이터 설정
-companies = ['Be;Worth', '스튜디오 도담', '오밀조밀', '별채집', 'HUMM', 'shelwe?', 'Urban+', 'DMZon', 'Dtour', 'Polipocker', '이쁘둥', '온새미로', '앤토피아', 'PURIP', 'Edgee', 'zip', '워케이션', 'TaekwonDO', 'odd&ordinary', '나름', '하니팜', 'fair:ing', '4D TRAIL', 'Greenip', 'Miliax', 'cultiverse', 'Beingtz', 'Artvi', 'Oppenground', '마켙-인', '마스코리아', 'Valim', '애틋한지', 'Reside', '유교버셜']
+companies = ['Be;Worth', 'Studio DoDam', 'oh!Meal, Joy Meal', 'ByunchaeZIP', 'HUMM', 'shelwe?', 'Urban+', 'DMZon', 'Dtour', 'Polipocker', 'IPDOONG', 'Onsaemiro', 'ANTOPIA', 'PURIP', 'Edgee', 'zip', 'workzz', 'TaekwonDO', 'odd&ordinary', 'NAR-M', 'Hanno Farm', 'fair:ing', '4D TRAIL', 'Greenip', 'Miliax', 'cultiverse', 'Beingtz', 'Artvi', 'Oppenground', 'Market-in', 'MASKOREA', 'Valim', '@hanji', 'Reside', 'UGYOVERSIAL']
 initial_user_coins = 500
 
 # 세션 상태 초기화
