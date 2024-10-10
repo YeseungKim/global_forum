@@ -91,4 +91,8 @@ for idx, (company, coins) in enumerate(sorted_data):
         st.markdown(f'{company}')
         st.write(f"Coins: {coins}")
         st.write("---")
+        
 
+    
+   
+    
